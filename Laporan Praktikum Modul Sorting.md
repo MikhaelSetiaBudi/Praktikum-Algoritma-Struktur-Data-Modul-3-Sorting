@@ -691,8 +691,167 @@ menapilkan pesan "Nama 10 warga sebelum diurutkan: " dengan output array yang ma
 #### Output Screenshot
 ![alt text](https://github.com/MikhaelSetiaBudi/Praktikum-Algoritma-Struktur-Data-Modul-3-Sorting/blob/master/Output%20Modul%203%20Alstrukdat/Output%20Unguided%202%20Sorting.png?raw=true)
 
+### 3. Buatlah program yang meminta user menginputkan suatu bilangan n dan meminta user untuk menginputkan sejumlah n karakter. Kemudian program akan melakukan sorting secara menaik (ascending) dan menurun (descending)!
+
+```C++
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main() 
+{
+    int n;
+    cout << "Masukkan banyaknya karakter: ";
+    cin >> n;
+
+    vector<char> characters(n);
+
+    cout << "Masukkan karakter:" << endl;
+    for (int i = 0; i < n; ++i) 
+    {
+        cout << "Karakter ke-" << i + 1 << ": ";
+        cin >> characters[i];
+    }
+
+    cout << "Urutan karakter sebelum sorting: " << endl;
+     for (char character : characters) 
+    {
+        cout << character << " ";
+    }
+    cout << endl;
+
+    sort(characters.begin(), characters.end());
+
+    cout << "Urutan karakter setelah ascending sort: " << endl;
+    for (char character : characters) 
+    {
+        cout << character << " ";
+    }
+    cout << endl;
+
+    sort(characters.rbegin(), characters.rend());
+
+    cout << "Urutan karakter setelah descending sort: " << endl;
+    for (char character : characters) 
+    {
+        cout << character << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+
+
+// Mikhael Setia Budi
+// 2311110033
+// copyright@MikhaelS.B
+```
+
+**Code 1**
+```C++
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+```
+kode diatas digunakan untuk mendefinisikan header file iostream yang berisi definisi objek input dan output standar seperti cin, dan cout. algoritma untuk fungsi pengurutan, dan vector untuk menggunakan struktur data vektor. using namespace std digunakan untuk menggunakan namespace std.
+
+**Code 2**
+```C++
+int main() 
+{
+    int n;
+    cout << "Masukkan banyaknya karakter: ";
+    cin >> n;
+
+    vector<char> characters(n);
+
+    cout << "Masukkan karakter:" << endl;
+    for (int i = 0; i < n; ++i) 
+    {
+        cout << "Karakter ke-" << i + 1 << ": ";
+        cin >> characters[i];
+    }
+```
+fungsi main merupakan fungsi utama yang akan dieksekusi saat program dijalankan. lalu mendeklarasikan variabel n yang digunakan untuk menyimpan jumlah karakter yang akan dimasukkan pengguna dengan tipe data integer. membuat vektor bernama characters dengan panjang n dibuat untuk menyimpan karakter yang akan dimasukkan oleh pengguna. program akan diminta untuk memasukkan karakter sejumlah n dan disimpan dalam vektor characters.
+
+**Code 3**
+```C++
+ cout << "Urutan karakter sebelum sorting: " << endl;
+     for (char character : characters) 
+    {
+        cout << character << " ";
+    }
+    cout << endl;
+```
+Program akan mencetak pesan Urutan karakter sebelum sorting dengan menggunakan cout dan endl untuk newline sehingga karakter yang belum diurutkan akan muncul dibawahnya. lalu program akan mencetak karakter yang belum diurutkan.
+
+**Code 4**
+```C++
+sort(characters.begin(), characters.end());
+```
+fungsi sort digunakan untuk mengurutkan karakter dalam vektor characters secara ascending (menaik)
+
+**Code 5**
+```C++
+cout << "Urutan karakter setelah ascending sort: " << endl;
+    for (char character : characters) 
+    {
+        cout << character << " ";
+    }
+    cout << endl;
+```
+program akan mencetak urutan karakter yang sudah diurutkan secara ascending atau menaik dan mencetak pesan Urutan karakter setelah ascending sort dengan menggunakan cout, endl untuk newline sehingga karakter yang sudah diurutkan akan muncul dibawahnya.
+
+**Code 6**
+```C++
+sort(characters.rbegin(), characters.rend());
+```
+fungsi sort digunakan kembali untuk mengurutkan karakter dalam vektor characters secara descending atau menurun.
+
+**Code 7**
+```C++
+ cout << "Urutan karakter setelah descending sort: " << endl;
+    for (char character : characters) 
+    {
+        cout << character << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
+```
+setelah diurutkan secara descending, program mencetak karakter yang telah diurutkan dan mencetak pesan Urutan karakter setelah descending sort dengan menggunakan cout. endl untuk newline sehingga karakter yang sudah diurutkan akan muncul dibawahnya. return 0 untuk menandakan bahwa program telah berakhir. 
+
+#### Output:
+```C++
+Masukkan banyaknya karakter: 5
+Masukkan karakter:
+Karakter ke-1: a
+Karakter ke-2: c
+Karakter ke-3: e
+Karakter ke-4: d
+Karakter ke-5: b
+Urutan karakter sebelum sorting:
+a c e d b
+Urutan karakter setelah ascending sort:
+a b c d e
+Urutan karakter setelah descending sort:
+e d c b a
+```
+menampilkan pesan dimana pengguna dapat memasukkan panjang array, setelah itu masukkan karakter secara acak. lalu akan muncul pesan Urutan karakter sebelum sorting dan karakter yang belum diurutkan. setelah diurutkan secara ascending maka akan muncul pesan Urutan karakter setelah ascending sort dan karakter yang telah diurutkan secara ascending (menaik). diurutkan secara descending lalu akan memunculkan pesan Urutan karakter setelah descending sort dan karakter yang telah diurutkan secara descending (menurun)
+
+#### Full code Screenshot:
+![alt text](https://github.com/MikhaelSetiaBudi/Praktikum-Algoritma-Struktur-Data-Modul-3-Sorting/blob/master/Modul%203%20Alstrukdat/Code%20Unguided%203%20Sorting.png?raw=true)
+
+#### Output Screenshot
+![alt text](https://github.com/MikhaelSetiaBudi/Praktikum-Algoritma-Struktur-Data-Modul-3-Sorting/blob/master/Output%20Modul%203%20Alstrukdat/Output%20Unguided%203%20Sorting.png?raw=true)
+
 ## Kesimpulan
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+dalam sorting terdapat 3 cara pengurutan yaitu insertion sort, bubble sort, dan selection sort dimana masing masing memiliki kelebihan dan kekurangan. dengan sorting ini ketika memasukkan elemen atau karakter yang tidak urut menjadi menjadi mudah diurutkan. tentu ini sangat penting dalam menganalisis data karena tidak perlu mengurutkannya dalam coding karena bisa menggunakan fungsi sorting.
 
 ## Referensi
 [1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
