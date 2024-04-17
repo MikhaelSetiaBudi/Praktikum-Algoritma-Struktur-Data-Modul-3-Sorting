@@ -6,7 +6,7 @@
 ### 1. Konsep Dasar Sorting
 
 Algoritma sorting adalah algoritma untuk meletakan elemen data ke dalam urutan tertentu, berdasarkan satu atau beberapa kunci ke dalam tiap tiap elemen. Algoritma Sorting termasuk salah satu contoh yang 
-kaya akan solusi.
+kaya akan solusi. Sorting adalah proses pengurutan data yang sebelumnya disusun secara acak atau tidak teratur menjadi urut dan teratur menurut suatu aturan tertentu [1].
 
 Algoritma sorting terbagi menjadi dua jenis berdasarkan data terurutnya yaitu:
 
@@ -95,7 +95,7 @@ int main() {
 ### 3. Bubble Sort
 
 Cara pengurutan Bubble Sort adalah membandingkan elemen yang sekarang dengan elemen berikutnya.
-jika elemen sekarang > elemen berikutnya, maka ditukar.
+jika elemen sekarang > elemen berikutnya, maka ditukar. Suatu  metode  yang  ada  pada  algoritma  sorting,  yang  dilakukan  dengan  cara melakukan suatu perbandingan pada tiap komponen elemennya, selanjutnya menukar elemen satu  dengan  yang  lainnya  hingga  berulang sampai  sesuai ketetentuan  yang  ditetapkan [2].
 
 **Contoh Prosedur Bubble Sort dalam bahasa C++**
 ```C++
@@ -121,7 +121,7 @@ void bubble_sort(int arr[], int length){
 ### 4.  Selection Sort
 
 Cara pengurutan Selection Sort adalah dengan membandingkan elemen sekarang dengan elemen berikutnya sampai terakhir.
-Jika ditemukan elemen paling kecil, kemudian ditukar dengan elemen sekarang.
+Jika ditemukan elemen paling kecil, kemudian ditukar dengan elemen sekarang. Algoritma selection sort adalah modifikasi algoritma bubble sort dengan mengurangi banyaknya parameter. Algoritma ini untuk mengurutkan data secara ascending maupun descending dimulai dari data awal sampai data ke N-1 [3].
 
 **Contoh prosedur Selection Sort:**
 ```C++
@@ -854,4 +854,11 @@ menampilkan pesan dimana pengguna dapat memasukkan panjang array, setelah itu ma
 dalam sorting terdapat 3 cara pengurutan yaitu insertion sort, bubble sort, dan selection sort dimana masing masing memiliki kelebihan dan kekurangan. dengan sorting ini ketika memasukkan elemen atau karakter yang tidak urut menjadi menjadi mudah diurutkan. tentu ini sangat penting dalam menganalisis data karena tidak perlu mengurutkannya dalam coding karena bisa menggunakan fungsi sorting.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1]	Y. A. Sandria, M. R. A. Nurhayoto, L. Ramadhani, and R. S. Harefa, “Penerapan Algoritma Selection Sort untuk Melakukan Pengurutan Data dalam Bahasa Pemrograman PHP,” 2022.
+
+[2]	* Saputri, D. Pemograman, B. Seleksi, and P. Saputri, “Analisis Study Komperatif Bubble Sort Dan Selection Sort Pada Algoritma,” Bhs. dan Mat., vol. 1, no. 6, pp. 151–161, 2023, [Online]. Available: https://doi.org/10.61132/arjuna.v1i6.305
+
+[3]	L. Lasriana and A. Gunaryati, “Sistem Informasi Apotek Berbasis Web Menggunakan Algoritma Sequential Search Dan Selection Sort,” JIPI (Jurnal Ilm. Penelit. dan Pembelajaran Inform., vol. 7, no. 2, pp. 392–401, 2022, doi: 10.29100/jipi.v7i2.2709.
+
+
+
